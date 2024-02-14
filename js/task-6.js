@@ -19,10 +19,11 @@ destroyButton.addEventListener('click', destroyBoxes);
 function onCreateButtonClick() {
   if (input.value >= 1 && input.value <= 100) {
     boxes.innerHTML = createBoxes(input.value);
-    input.value = '';
   } else {
     alert('Please, enter a value between 1 and 100');
   }
+
+  input.value = '';
 }
 
 function destroyBoxes() {
