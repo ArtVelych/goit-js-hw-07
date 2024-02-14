@@ -36,7 +36,6 @@ const imageTemplate = obj => {
 }
 
 const markup = images.map(imageTemplate).join('\n');
-console.log(markup);
 
 const boxElem = document.querySelector('.gallery');
 boxElem.insertAdjacentHTML('beforeend', markup);
